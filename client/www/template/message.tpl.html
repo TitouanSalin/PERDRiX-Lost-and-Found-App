@@ -1,0 +1,24 @@
+<!--La page d'échange par message avec un autre utilisateur-->
+<div class="container mt-1">
+    <div class="moncontainer">
+        <div class="mabox mt-2"><a class="nav-link link-light px-auto" href="#messagerie"><img src="svg/nav-arrow-left.svg" alt="messagerie" /></a></div>
+        <div class="mabox"><img src="{{image}}" class="rounded-circle" style="width: 50px; height: 50px;" alt="photo de profil">{{first_name}} {{last_name}}</div>
+    </div>
+    <div id="messages" class="mb-4" style="max-height: 400px; overflow-y: auto;">
+        {{#messages}}
+        <div class="message {{#is_sender}}sent{{/is_sender}}{{^is_sender}}received{{/is_sender}}">
+            <div
+                class="card {{#is_sender}}monbg-primary text-dark text-end ms-5{{/is_sender}}{{^is_sender}}bg-light text-dark text-start me-5{{/is_sender}} mb-2">
+                <div class="card-body">
+                    <p class="card-text">{{text}}</p>
+                    <small class="text-muted">{{sent_at}}</small>
+                </div>
+            </div>
+        </div>
+        {{/messages}}
+    </div>
+    <div class="input-group">
+        <input type="text" id="messageInput" class="form-control" placeholder="Écrivez votre message...">
+        <button id="sendMessageBtn" class="btn ajout">Envoyer</button>
+    </div>
+</div>

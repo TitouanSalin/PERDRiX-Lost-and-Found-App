@@ -1,0 +1,15 @@
+<!--La page permettant de voir les postes de l'utilisateur et vers une page pour ajouter un nouveau poste-->
+<div class="d-grid gap-2 col-6 mx-auto mt-2">
+  <button id="poster" class="btn ajout" type="button">AJOUTER UN OBJET</button>
+</div>
+<div id="posts" class="h3">Vos posts</div>
+{{#.}}
+<div class="card mt-2 mx-2 w-auto rounded d-block p-3" style="width: 18rem;">
+  <img src="{{image}}" class="card-img-top" alt="image de l'objet trouvé">
+  <div class="card-body">
+    <h5 class="card-title">{{categorie}} {{couleur}} {{marque}} - posté le : {{sent_at}}</h5>
+    <p class="card-text">Informations supplémentaires : {{text}}</p>
+    <a href="#suppressionposte" onclick="sessionStorage['poste_id']='{{poste_id}}'" class="btn ajout">Supprimer</a>
+  </div>
+</div>
+{{/.}}

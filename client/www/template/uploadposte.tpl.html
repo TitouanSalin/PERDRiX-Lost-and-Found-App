@@ -1,0 +1,61 @@
+<!--La page qui permet d'ajouter un poste-->
+<div class="input-group mt-4">
+  <span class="input-group-text ajout" id="basic-addon1">Type d'objet</span>
+  <input type="text" id="categorie" class="form-control ajout2" placeholder="Casque audio" aria-label="Casque audio"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4">
+  <span class="input-group-text ajout" id="basic-addon1">Couleur</span>
+  <input id="couleur" type="text" class="form-control ajout2" placeholder="Noir" aria-label="Noir"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4">
+  <span class="input-group-text ajout" id="basic-addon1">Marque</span>
+  <input type="text" id="marque" class="form-control ajout2" placeholder="JBL" aria-label="JBL"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4">
+  <span class="input-group-text ajout" id="basic-addon1">Où as tu trouvé l'objet ?</span>
+  <input id="loctrouve" type="text" class="form-control ajout2" placeholder="Dans le grand hall"
+    aria-label="Dans le grand hall" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4">
+  <span class="input-group-text ajout" id="basic-addon1">Où l'objet va-t-il être conservé ? </span>
+  <input type="text" id="locstockage" class="form-control ajout2" placeholder="Dans mon casert, au 12.40.18"
+    aria-label="Dans mon casert, au 12.40.18" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4">
+  <span class="input-group-text ajout" id="basic-addon1">Informations supplémentaires</span>
+  <input id="infosup" type="text" class="form-control ajout2" placeholder="" aria-label=""
+    aria-describedby="basic-addon1">
+</div>
+
+<div>
+    <div class="input-group mt-4">
+        <a id="poster" class="btn stretched-link ajout">Poster</a>
+    </div>
+    <div id="retouramespostes" class="btn ajout2 mx-auto mt-2">Retour</div>
+</div>
+
+<!-- Modal Erreur Post-->
+<div class="modal fade" id="champpbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Vous devez renseigner au moins le type d'objet et l'endroit où vous l'avez trouvé.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>

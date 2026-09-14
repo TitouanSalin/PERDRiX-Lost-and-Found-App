@@ -1,0 +1,59 @@
+<!--La page d'accueil non connecté, pour se connecter-->
+<div class="p-3 ">
+  <div style="display: flex; justify-content: center; align-items: center;"><img src="img/perdrix.jpg" class="img-fluid" style="width: 40%; height: auto;" alt="verification" /></div>
+</div>
+<div class="input-group mt-4 px-3">
+  <span class="input-group-text ajout" id="basic-addon1">Identifiant</span>
+  <input type="text" id="lelogin" class="form-control ajout2" placeholder="Harry Potter" aria-label="Harry Potter"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <span class="input-group-text ajout" id="basic-addon1">Password</span>
+  <input type="password" id="lemdp" class="form-control ajout2" placeholder="......" aria-label="......"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <a id="seconnecter" class="btn stretched-link ajout">Se connecter</a>
+</div>
+
+<div class="input-group mt-4 px-3">
+  <a id="nouveau" class="btn stretched-link ajout">Nouveau ? Créer un compte</a>
+</div>
+
+<!-- modal login -->
+<div class="modal fade" id="loggedModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bienvenue</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Vous êtes connecté
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="fermer-login">Accéder à l'application</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="shitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Le mot de passe / l'identifiant est erroné
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<!--La page permettant de modifier les données personnelles de l'utilisateur-->
+<div class="compte-modifiable">
+  <div>
+      <a class="img-link" href="#uploadphoto">
+          <img src="{{image}}" class="w-50 rounded mx-auto d-block p-1 img-fluid rounded-circle" alt="photo de profil">
+      </a>
+  </div>
+  <!--class="rounded mx-auto d-block img-fluid .rounded-circle-->
+  <div style="display: flex; justify-content: center; align-items: center;">Informations personnelles</div>
+  <div class="input-group mt-1 px-3">
+      <span class="input-group-text ajout" id="basic-addon1">Nom</span>
+      <input type="text" id="leNom" class="form-control ajout2" placeholder="{{last_name}}" aria-label="{{last_name}}"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mt-1 px-3">
+      <span class="input-group-text ajout" id="basic-addon1">Prénom</span>
+      <input type="text" id="lePrenom" class="form-control ajout2" placeholder="{{first_name}}" aria-label="{{first_name}}"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mt-1 px-3">
+      <span class="input-group-text ajout" id="basic-addon1">Email</span>
+      <input type="text" id="lEmail" class="form-control ajout2" placeholder="{{email}}" aria-label="{{email}}"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mt-1 px-3">
+      <span class="input-group-text ajout" id="basic-addon1">Numéro de téléphone</span>
+      <input type="text" id="leNum" class="form-control ajout2" placeholder="{{phone_number}}" aria-label="{{phone_number}}"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mt-1 px-3">
+      <span class="input-group-text ajout" id="basic-addon1">Mot de passe</span>
+      <input type="password" id="lemdp" class="form-control ajout2" placeholder="" aria-label=""
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mt-1 px-3">
+      <span class="input-group-text ajout" id="basic-addon1">Confirmation</span>
+      <input type="password" id="lemdpconf" class="form-control ajout2" placeholder="" aria-label=""
+        aria-describedby="basic-addon1">
+    </div>
+
+  <div class="px-3">
+      <div id="enregistrer" class="btn ajout mt-2">Enregistrer</div>
+      <div id="retour" class="btn ajout2 mt-2">Retour</div>
+  </div>
+
+  <!-- Modal Alerte Diff-->
+  <div class="modal fade" id="diffModalpb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Les mots de passe sont différents
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

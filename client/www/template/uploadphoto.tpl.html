@@ -1,0 +1,93 @@
+<div class="container">
+    <!-- Réceptacle de l'image que nous allons prendre avec l'appareil photo-->
+    <div class="row pt-4">
+        <div class="col text-center">
+            <img id="myImage" class="rounded img-fluid">
+        </div>
+    </div>
+
+    <!-- Les boutons d'action -->
+    <div class="row pt-4">
+        <div class="col text-center">
+            <button type="button" class="btn ajout" onclick="openCamera('camera')">Prendre une photo</button>
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col text-center">
+            <button type="button" class="btn ajout" onclick="openCamera('album')">Utiliser une photo de sa
+                galerie</button>
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col text-center">
+            <button type="button" class="btn btn-secondary" onclick="uploadImg()">Uploader la photo</button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <button id="retouravant" class="btn ajout2 ms-2 mt-4" type="submit">Retour</button>
+</div>
+
+<!-- Conteneur du Spinner Noir (initialement caché) -->
+<div id="spinner-container" class="d-flex justify-content-center align-items-center mt-3" style="display: none;">
+    <div id="spinner" class="spinner-border text-dark" role="status">
+        <span class="visually-hidden">Chargement...</span>
+    </div>
+</div>
+
+<!-- Modal Alerte Photo-->
+<div class="modal fade" id="photo-error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Il y a eu une erreur lors de l'upload
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Succès-->
+<div class="modal fade" id="photo-success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Super !</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Vous avez une nouvelle photo de profil !
+            </div>
+            <div class="modal-footer">
+                <button id="fermer-uploadphoto" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Pas de Photo-->
+<div class="modal fade" id="no-pdp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Il faut choisir une photo avant
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>

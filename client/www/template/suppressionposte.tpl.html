@@ -1,0 +1,37 @@
+<!--La page permettant de supprimer un poste-->
+
+<!-- Modal Alerte Suppr-->
+<div class="modal fade" id="supprModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmation</h1>
+          <button type="button" id="annuler" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Voulez vous vraiment supprimer cette annonce ?
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="ouijeconfirme" class="btn btn-secondary" data-bs-dismiss="modal">Oui je confirme</button>
+          <button type="button" id="annuler2" class="btn ajout2" data-bs-dismiss="modal">Annuler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Alerte Suppr Error-->
+  <div class="modal fade" id="supprModalError" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          La suppression n'a pas pu aboutir
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+<!--La page permettant de "vérifier" que l'objet appartient bien à l'utilisateur avec un petit test-->
+    <div style="display: flex; justify-content: center; align-items: center;"><img src="img/verification.jpg" class="img-fluid w-50" alt="verification" /></div>
+    <div style="display: flex; justify-content: center; align-items: center;" class="mx-4">Nous effectuons une petite vérification afin de nous assurer que cet objet est bien à vous !</div>
+<div style="display: flex; justify-content: center; align-items: center;" class="py-2"><img src="img/trait3.jpg" class="img-fluid" alt="trait" /></div>
+<div style="display: flex; justify-content: center; align-items: center;" class="mx-4 py-3">Vers où pensez-vous avoir perdu votre objet ?</div>
+<div style="display: flex; justify-content: center; align-items: center;">
+    {{#.}}
+    <a href="#message" onclick = "localStorage['teneur'] = '{{teneur}}'"
+          class="btn ajout mx-auto">{{localisation}}</a>
+    {{/.}}
+</div>
+<div>
+    <button id="etCaRepart" class="btn ajout2 mt-4 ms-3" type="button">Retour</button>
+</div>

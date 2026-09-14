@@ -1,0 +1,98 @@
+.petit {
+    font-size: x-small;
+}
+
+.ajout {
+    background-color: #2B3035;
+    color: #ffffff;
+}
+
+.ajout2 {
+    background-color: #9EC5FE;
+}
+
+.moncontainer {
+    display: flex;
+}
+
+:root {
+    --monbs-primary: #9EC5FE; /* couleur bleue par défaut */
+}
+
+.monbg-primary {
+    background-color: var(--monbs-primary) !important;
+}
+
+.mabox {
+    padding: 5px;
+}
+
+.mon-bouton {
+    font-variant: small-caps;
+
+}
+
+.ima {
+    width: 100vw
+}
+
+.navbar {
+    transition: bottom 0.3s;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.sent {
+    text-align: right;
+}
+
+.received {
+    text-align: left;
+}
+
+.sent .card {
+    background-color: #d1e7dd;
+}
+
+.received .card {
+    background-color: #f8d7da;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-y: auto;
+}
+
+.compte-modifiable{
+    padding-bottom: 400px;
+}
+
+#posts{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('../fonts/Montserrat-BlackItalic.ttf') format('opentype');
+}
+
+body {
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+#perdrix{
+    font-family: 'Montserrat-Italic', sans-serif;
+}

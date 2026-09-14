@@ -1,0 +1,119 @@
+<!--La page permettant de créer un nouveau compte-->
+<div class="input-group mt-4 px-3">
+<span class="input-group-text ajout" id="basic-addon1">Identifiant</span>
+<input type="text" id="lelogin" class="form-control ajout2" placeholder="Harry Potter" aria-label="Harry Potter"
+  aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <span class="input-group-text ajout" id="basic-addon1">Mot de passe</span>
+  <input id="lemdp" type="password" class="form-control ajout2" placeholder="......" aria-label="......"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <span class="input-group-text ajout" id="basic-addon1">Confirmation</span>
+  <input type="password" id="laconfirmation" class="form-control ajout2" placeholder="......" aria-label="......"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+<span class="input-group-text ajout" id="basic-addon1">Nom</span>
+<input type="text" id="lenom" class="form-control ajout2" placeholder="Potter" aria-label="Potter"
+  aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <span class="input-group-text ajout" id="basic-addon1">Prénom</span>
+  <input id="leprenom" type="text" class="form-control ajout2" placeholder="Harry" aria-label="Harry"
+    aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <span class="input-group-text ajout" id="basic-addon1">Email </span>
+  <input type="text" id="lemail" class="form-control ajout2" placeholder="harry.potter@polytechnique.edu"
+    aria-label="harry.potter@polytechnique.edu" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <span class="input-group-text ajout" id="basic-addon1">N° Téléphone (facultatif)</span>
+  <input type="text" id="phone_number" class="form-control ajout2" placeholder="00 00 00 00 00"
+    aria-label="00 00 00 00 00" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mt-4 px-3">
+  <a id="sinscrire" class="btn stretched-link ajout">S'inscrire</a>
+</div>
+
+
+<!-- Modal Alerte Champ-->
+<div class="modal fade" id="champModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Un champ n'a pas été rempli
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Alerte Diff-->
+<div class="modal fade" id="diffModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Les mots de passe sont différents
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Alerte deja-->
+<div class="modal fade" id="dejaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ce login est déjà utilisé par un compte
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Alerte reussie-->
+<div class="modal fade" id="reussieModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bienvenue</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Vous êtes inscrit
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="fermer-register" class="btn btn-secondary" data-bs-dismiss="modal">Accéder à l'application</button>
+      </div>
+    </div>
+  </div>
+</div>

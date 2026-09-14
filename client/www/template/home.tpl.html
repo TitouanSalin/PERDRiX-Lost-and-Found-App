@@ -1,0 +1,70 @@
+<!--La page d'accueil connectée avec les postes-->
+<div id="my-nav">
+    <nav class="navbar bg-body-tertiary " style="background-color: #e3f2fd;">
+        <form class="container-fluid justify-content-center">
+
+            <ul class="nav nav-pills">
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link link-dark dropdown-toggle" id="categorie" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Catégorie d'objet
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        {{#categories}}
+                        <li><a href="#selection" onclick="sessionStorage['categorie']='{{.}}'" class="dropdown-item">{{.}}</a></li>
+                        {{/categories}}
+                    </ul>
+
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link link-dark dropdown-toggle" id="couleur" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Couleur
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        {{#couleurs}}
+                        <li><a href="#selection" onclick="sessionStorage['couleur']='{{.}}'" class="dropdown-item">{{.}}</a></li>
+                        {{/couleurs}}
+                    </ul>
+
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link link-dark dropdown-toggle" id="marque" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Marque
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        {{#marques}}
+                        <li><a href="#selection" onclick="sessionStorage['marque']='{{.}}'" class="dropdown-item">{{.}}</a></li>
+                        {{/marques}}
+                    </ul>
+
+                </li>
+                <button id="supprfiltre" class="btn ajout" type="button">Supprimer les filtres</button>
+
+            </ul>
+
+
+        </form>
+    </nav>
+</div>
+
+{{#objets}}
+<div class="card mt-2 mx-2 w-auto rounded d-block p-3" style="width: 18rem;">
+    <img src="{{image}}" class="card-img-top" alt="image de l'objet trouvé">
+    <div class="card-body">
+        <h5 class="card-title">{{categorie}} {{couleur}} {{marque}} - posté le : {{sent_at}}</h5>
+        <p class="card-text">{{text}}</p>
+        <a href="#testcontact" onclick="sessionStorage['poste_id']='{{poste_id}}', sessionStorage['posteCategorie']='{{categorie}}', sessionStorage['posteMarque']='{{marque}}', sessionStorage['posteCouleur']='{{couleur}}'" class="btn ajout">Contacter</a>
+    </div>
+</div>
+{{/objets}}
